@@ -1,0 +1,59 @@
+html, body {
+  font-family: 'B612' !important;
+}
+
+body {
+  background: url(/IMG/fundo.jpg) center no-repeat;
+  background-size: cover;
+}
+
+.container {
+  display: flex;
+  flex-flow: column;
+  height: 100vh;
+  max-width: 1500px;
+  padding: 0 20px;
+  margin: 0 auto;
+}
+
+main, header {
+  flex: 1;
+}
+
+.container-title {
+  display: grid;
+  text-align: center;
+  text-transform: uppercase;
+  color: white;
+  font-weight: 700;
+}
+
+.container-title h2 {
+  padding: 10px 10px;
+  font-size: 20px;
+  line-height: 25px;
+  margin-top: 37px;
+}
+
+.container-title h1 {
+  font-size: 96px;
+  line-height: 115px;
+  margin-top: 75px;
+}
+
+.imgCapa {
+  height: 267px;
+  border-radius: 20px;
+}
+
+.containerContents {
+
+}
+
+@media screen and (max-width: 1280px) {
+  
+  .container-title h2 {
+    margin-top: 500px;
+  }
+
+}
