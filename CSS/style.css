@@ -30,30 +30,162 @@ main, header {
 
 .container-title h2 {
   padding: 10px 10px;
-  font-size: 20px;
+  font-size: 27px;
   line-height: 25px;
   margin-top: 37px;
 }
 
 .container-title h1 {
-  font-size: 96px;
+  font-size: 135px;
   line-height: 115px;
-  margin-top: 75px;
+  margin: 75px 0 175px;
 }
 
 .imgCapa {
-  height: 267px;
+  height: 300px;
   border-radius: 20px;
 }
 
-.containerContents {
-
+.containerImgCapa {
+  display: flex;
+  padding: 0 115px;
+  margin: 0 120px;
 }
 
-@media screen and (max-width: 1280px) {
-  
-  .container-title h2 {
-    margin-top: 500px;
-  }
+.containerContents {
+  padding: 0 0 0 80px;
+}
 
+.containerStatus {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 50px 95px 0 0;
+}
+
+.text {
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 32px;
+  color: white;
+  font-style: normal;
+}
+
+.textStatus {
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 30px;
+  font-style: normal;
+  color: white;
+  padding-right: 60px;
+}
+
+#textStatusTwo {
+  padding: 0 20px 0 90px;
+}
+
+.containerButtons {
+  margin-top: 81px;
+}
+
+.buttonOne {
+  border-radius: 3px;
+  padding: 15px 27px 15px 27px;
+  border: none;
+  background-color: #0072D2;
+  color: white;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: 500;
+  margin-right: 15px;
+}
+
+.buttonTwo {
+  border-radius: 3px;
+  padding: 15px 25px 15px 25px;
+  background-color: #131318;
+  color: white;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: 500;
+  border: 1px solid #FFFFFF;
+}
+
+button {
+  text-transform: uppercase;
+}
+
+.rodape {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20px;
+}
+
+.rodape>*:not(:first-child) {
+  margin-left: 10px;
+}
+
+.linkedin {
+  width: 50px;
+}
+
+.instagram {
+  width: 50px;
+}
+
+.facebook {
+  width: 50px;
+}
+
+footer p {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20px;
+  color: white;
+}
+
+@media screen and (max-width: 1440px) {
+  main, header, footer {
+    flex: 1;
+  }
+  .container-title h2 {
+    font-size: 20px;
+    line-height: 24px;
+  }
+  .container-title h1 {
+    font-size: 96px;
+    line-height: 116px;
+    margin: 30px 0 117px;
+  }
+  .imgCapa {
+    height: 267px;
+    border-radius: 20px;
+  }
+  .containerImgCapa {
+    padding: 0 90px;
+    margin: 0 120px;
+  }
+  .containerContents {
+    padding: 0 0 0 75px;
+  }
+  .containerStatus {
+    margin: 40px 50px 0 0;
+  }
+  .textStatus {
+    padding-right: 80px;
+  }
+  #textStatusTwo {
+    padding: 0 40px 0 102px;
+  }
+  .containerButtons {
+    margin-top: 57px;
+  }
+  .rodape {
+    margin: 10px 0 15px 0;
+  }
+  footer p {
+    margin: 0;
+  }
 }

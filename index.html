@@ -22,13 +22,59 @@
           <h1>Loki</h1>
         </div>
     </header>
-    
+
     <main>
-      <div class="containerContents">
+      <div class="containerImgCapa">
         <img class="imgCapa" src="./IMG/capa.svg" alt="Capa">
+        <div class="containerContents">
+          <p class="text">Em “Loki” da Marvel Studios, o vilão mercurial Loki (Tom Hiddleston) retoma seu papel como o
+            Deus do Mal em uma nova série que ocorre após os eventos de “Vingadores: Endgame”. </p>
+          <div class="containerStatus">
+            <img src="./IMG/timer.svg" alt="Timer">
+            <p class="textStatus">51 min</p>
+            <img src="./IMG/recomendação.svg" alt="">
+            <p id="textStatusTwo" class="textStatus">2021</p>
+          </div>
+          <div class="containerButtons">
+            <a class="buttonOne" href="https://www.disneyplus.com/pt-br/series/loki/6pARMvILBGzF"
+              target="_blank">Assistir agora</a>
+            <a class="buttonTwo" href="https://www.youtube.com/watch?v=xdBWrkcmMwU" target="_blank">Trailer</a>
+          </div>
+        </div>
       </div>
     </main>
+
+    <footer>
+      <div class="rodape">
+        <a href="https://www.linkedin.com/in/bruno-milano-779630173/" target="_blank">
+          <img class="linkedin" src="./IMG/linkedin.svg" alt="linkedin">
+        </a>
+
+        <a href="https://www.instagram.com/milanobrn/" target="_blank">
+          <img class="instagram" src="./IMG/instagram.svg" alt="Instagram">
+        </a>
+
+        <a href="https://www.facebook.com/bruno.milano.566/" target="_blank">
+          <img class="facebook" src="./IMG/facebook.svg" alt="Facebook">
+        </a>
+      </div>
+
+      <p>&copy; Todos os direitos reservados - Bruno Milano</p>
+    </footer>
   </div>
+
+  <script src="https://unpkg.com/scrollreveal"></script>
+  <script>
+    const sr = ScrollReveal({
+      origin: 'left',
+      distance: '50px',
+      duration: 1000,
+      reset: true
+    });
+    ScrollReveal().reveal('.container', { delay: 20 });
+    ScrollReveal().reveal('.main-content', { delay: 200 });
+    ScrollReveal().reveal('.js', { delay: 20 });
+  </script>
 </body>
 
 </html>
