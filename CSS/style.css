@@ -115,38 +115,8 @@ button {
   text-transform: uppercase;
 }
 
-.rodape {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin: 20px;
-}
 
-.rodape>*:not(:first-child) {
-  margin-left: 10px;
-}
-
-.linkedin {
-  width: 50px;
-}
-
-.instagram {
-  width: 50px;
-}
-
-.facebook {
-  width: 50px;
-}
-
-footer p {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin: 20px;
-  color: white;
-}
-
-@media screen and (max-width: 1440px) {
+@media screen and (max-width: 1470px) {
   main, header, footer {
     flex: 1;
   }
@@ -182,10 +152,128 @@ footer p {
   .containerButtons {
     margin-top: 57px;
   }
-  .rodape {
-    margin: 10px 0 15px 0;
+
+}
+
+@media screen and (max-width: 1410px) {
+  main, header, footer {
+    flex: 1;
   }
-  footer p {
-    margin: 0;
+  .container {
+    max-width: 1000px;
+  }
+  .container-title h2 {
+    margin-top: 15px;
+    font-size: 20px;
+    line-height: 24px;
+  }
+  .container-title h1 {
+    font-size: 96px;
+    line-height: 116px;
+    margin: 10px 0 117px;
+  }
+  .imgCapa {
+    height: 240px;
+    border-radius: 20px;
+  }
+  .containerImgCapa {
+    padding: 0 10px;
+    margin: 0 30px;
+  }
+  .containerContents {
+    padding: 0 0 0 75px;
+  }
+  .containerStatus {
+    margin: 20px 50px 0 0;
+  }
+  .textStatus {
+    padding-right: 50px;
+  }
+  .containerButtons {
+    margin-top: 50px;
+  }
+
+}
+
+@media screen and (max-width: 1010px) {
+  .container {
+    max-width: 1000px;
+  }
+  .container-title h2 {
+    margin-top: 70px;
+  }
+  .container-title h1 {
+    margin: 10px 0 93px;
+  }
+  .containerImgCapa {
+    padding: 0 35px;
+  }
+  .containerContents {
+    padding: 0 0 0 55px;
+  }
+  .containerStatus {
+    margin: 20px 0 0;
+  }
+  .text {
+    font-size: 17px;
+  }
+  .textStatus {
+    padding-right: 60px;
+    font-size: 20px;
+  }
+  .imgTimer {
+    height: 25px;
+  }
+  .imgStars {
+    height: 30px;
+  }
+  #textStatusTwo {
+    padding: 0 85px 0 98px;
+  }
+  .containerButtons {
+    margin-top: 50px;
+  }
+
+}
+
+@media screen and (max-width: 960px) {
+
+  .container{
+    max-height: 650px;
+  }
+  .imgCapa {
+    height: 230px;
+  }
+  .containerImgCapa {
+    padding: 0 8px;
+  }
+  .containerStatus {
+    margin: 40px 0 0;
+  }
+  .text {
+    font-size: 16px;
+    margin-right: 25px;
+    line-height: 27px;
+  }
+  .textStatus {
+    padding-right: 90px;
+    font-size: 19px;
+  }
+  .imgTimer {
+    height: 25px;
+    padding-right: 15px;
+  }
+  #textStatusTwo {
+    padding: 0 85px 0 115px;
+  }
+  .containerButtons {
+    margin-top: 51px;
+  }
+  .buttonOne {
+    padding: 10px 22px 10px 22px;
+    font-size: 15px;
+  }
+  .buttonTwo {
+    padding: 8px 20px 8px 20px;
   }
 }
