@@ -7,6 +7,10 @@ body {
   background-size: cover;
 }
 
+main, header {
+  flex: 1;
+}
+
 .container {
   display: flex;
   flex-flow: column;
@@ -16,20 +20,16 @@ body {
   margin: 0 auto;
 }
 
-main, header {
-  flex: 1;
-}
-
 .container-title {
   display: grid;
   text-align: center;
+  justify-content: center;
   text-transform: uppercase;
   color: white;
   font-weight: 700;
 }
 
 .container-title h2 {
-  padding: 10px 10px;
   font-size: 27px;
   line-height: 25px;
   margin-top: 37px;
@@ -41,26 +41,24 @@ main, header {
   margin: 75px 0 175px;
 }
 
-.imgCapa {
-  height: 300px;
-  border-radius: 20px;
-}
-
-.containerImgCapa {
+.containerMain {
   display: flex;
   padding: 0 115px;
   margin: 0 120px;
 }
 
-.containerContents {
-  padding: 0 0 0 80px;
+.imgCapa {
+  height: 300px;
+  border-radius: 20px;
+  transition: 0.2s;
 }
 
-.containerStatus {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  margin: 50px 95px 0 0;
+.imgCapa:hover {
+  box-shadow: 0px 0px 40px rgba(34, 139, 34, 0.5);
+}
+
+.containerContents {
+  padding: 0 0 0 80px;
 }
 
 .text {
@@ -71,17 +69,42 @@ main, header {
   font-style: normal;
 }
 
+.containerStatus {
+  display: flex;
+  align-items: center;
+  margin: 50px 95px 0 0;
+}
+
+.containerTimer {
+  display: flex;
+  padding-right: 10px;
+}
+
+.imgTimer {
+  padding-right: 10px;
+}
+
 .textStatus {
   font-size: 24px;
   font-weight: 700;
   line-height: 30px;
   font-style: normal;
   color: white;
-  padding-right: 60px;
 }
 
-#textStatusTwo {
-  padding: 0 20px 0 90px;
+.containerStars {
+  display: flex;
+  align-items: center;
+  padding-left: 90px;
+}
+
+.textStatusTwo {
+  padding-left: 20px;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 30px;
+  font-style: normal;
+  color: white;
 }
 
 .containerButtons {
@@ -98,6 +121,7 @@ main, header {
   text-transform: uppercase;
   font-weight: 500;
   margin-right: 15px;
+  transition: 0.2s;
 }
 
 .buttonTwo {
@@ -109,171 +133,284 @@ main, header {
   text-transform: uppercase;
   font-weight: 500;
   border: 1px solid #FFFFFF;
+  transition: 0.2s;
 }
 
 button {
   text-transform: uppercase;
 }
 
+.buttonTwo:hover, .buttonOne:hover {
+  box-shadow: 0px 0px 40px rgba(34, 139, 34, 0.5);
+}
 
-@media screen and (max-width: 1470px) {
-  main, header, footer {
-    flex: 1;
-  }
+@media screen and (max-width: 1280px) {
   .container-title h2 {
-    font-size: 20px;
-    line-height: 24px;
+    font-size: 22px;
+    line-height: 0px;
+    margin-top: 110px;
   }
   .container-title h1 {
-    font-size: 96px;
-    line-height: 116px;
-    margin: 30px 0 117px;
+    font-size: 116px;
+    line-height: 80px;
+    margin-top: 100px;
   }
-  .imgCapa {
-    height: 267px;
-    border-radius: 20px;
-  }
-  .containerImgCapa {
+  .containerMain {
     padding: 0 90px;
     margin: 0 120px;
   }
-  .containerContents {
-    padding: 0 0 0 75px;
-  }
-  .containerStatus {
-    margin: 40px 50px 0 0;
-  }
-  .textStatus {
-    padding-right: 80px;
-  }
-  #textStatusTwo {
-    padding: 0 40px 0 102px;
-  }
-  .containerButtons {
-    margin-top: 57px;
-  }
-
-}
-
-@media screen and (max-width: 1410px) {
-  main, header, footer {
-    flex: 1;
-  }
-  .container {
-    max-width: 1000px;
-  }
-  .container-title h2 {
-    margin-top: 15px;
-    font-size: 20px;
-    line-height: 24px;
-  }
-  .container-title h1 {
-    font-size: 96px;
-    line-height: 116px;
-    margin: 10px 0 117px;
-  }
   .imgCapa {
-    height: 240px;
-    border-radius: 20px;
-  }
-  .containerImgCapa {
-    padding: 0 10px;
-    margin: 0 30px;
+    height: 255px;
   }
   .containerContents {
-    padding: 0 0 0 75px;
-  }
-  .containerStatus {
-    margin: 20px 50px 0 0;
-  }
-  .textStatus {
-    padding-right: 50px;
-  }
-  .containerButtons {
-    margin-top: 50px;
-  }
-
-}
-
-@media screen and (max-width: 1010px) {
-  .container {
-    max-width: 1000px;
-  }
-  .container-title h2 {
-    margin-top: 70px;
-  }
-  .container-title h1 {
-    margin: 10px 0 93px;
-  }
-  .containerImgCapa {
-    padding: 0 35px;
-  }
-  .containerContents {
-    padding: 0 0 0 55px;
-  }
-  .containerStatus {
-    margin: 20px 0 0;
+    padding: 0 0 0 70px;
   }
   .text {
     font-size: 17px;
-  }
-  .textStatus {
-    padding-right: 60px;
-    font-size: 20px;
-  }
-  .imgTimer {
-    height: 25px;
-  }
-  .imgStars {
-    height: 30px;
-  }
-  #textStatusTwo {
-    padding: 0 85px 0 98px;
-  }
-  .containerButtons {
-    margin-top: 50px;
-  }
-
-}
-
-@media screen and (max-width: 960px) {
-
-  .container{
-    max-height: 650px;
-  }
-  .imgCapa {
-    height: 230px;
-  }
-  .containerImgCapa {
-    padding: 0 8px;
+    margin-bottom: 30px;
   }
   .containerStatus {
-    margin: 40px 0 0;
+    margin: 0;
   }
-  .text {
-    font-size: 16px;
-    margin-right: 25px;
-    line-height: 27px;
+  .containerTimer {
+    padding: 0 40px 0 0;
   }
-  .textStatus {
-    padding-right: 90px;
-    font-size: 19px;
+  .containerStars {
+    padding: 0;
   }
-  .imgTimer {
-    height: 25px;
-    padding-right: 15px;
-  }
-  #textStatusTwo {
-    padding: 0 85px 0 115px;
+  .textStatusTwo {
+    padding: 0 0 0 60px;
   }
   .containerButtons {
-    margin-top: 51px;
+    margin-top: 60px;
   }
   .buttonOne {
     padding: 10px 22px 10px 22px;
-    font-size: 15px;
   }
   .buttonTwo {
-    padding: 8px 20px 8px 20px;
+    padding: 9px 17px 9px 17px;
   }
 }
+
+@media screen and (max-width: 1024px) {
+  .container-title h2 {
+    font-size: 20px;
+    margin-top: 100px;
+  }
+  .container-title h1 {
+    font-size: 96px;
+    line-height: 26px;
+    margin-top: 100px;
+  }
+  .containerMain {
+    padding: 0 0 0 25px;
+    margin: 0;
+  }
+  .imgCapa {
+    height: 250px;
+  }
+  .containerContents {
+    padding: 0 0 0 70px;
+  }
+  .text {
+    font-size: 21px;
+    line-height: 28px;
+  }
+  .containerStatus {
+    padding: 25px 0 0 0;
+  }
+  .containerTimer {
+    padding: 0 70px 0 0;
+  }
+  .textStatus {
+    padding-right: 10px;
+    font-size: 20px;
+  }
+  .containerStars {
+    padding: 0;
+  }
+  .imgStars {
+    padding: 0 0 0 0;
+    height: 33px;
+  }
+  .textStatusTwo {
+    padding: 0 0 0 50px;
+    font-size: 20px;
+  }
+  .containerButtons {
+    margin-top: 49px;
+  }
+  .buttonOne {
+    padding: 10px 22px 10px 22px;
+    margin-right: 60px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .container-title h2 {
+    font-size: 25px;
+    margin-top: 125px;
+  }
+  .container-title h1 {
+    font-size: 120px;
+    line-height: 30px;
+    margin-top: 125px;
+  }
+  .imgCapa {
+    height: 260px;
+  }
+  .containerContents {
+    padding: 0 0 0 40px;
+  }
+  .text {
+    font-size: 16px;
+    line-height: 20px;
+    margin-bottom: 15px;
+  }
+  .containerStatus {
+    display: grid;
+    padding: 0;
+  }
+  .containerTimer {
+    display: flex;
+    padding: 0 0 10px 0;
+  }
+  .imgTimer {
+    height: 25px;
+    padding-right: 10px;
+  }
+  .textStatus {
+    font-size: 19px;
+  }
+  .containerStars {
+    display: grid;
+    margin-bottom: 10px;
+  }
+  .imgStars {
+    height: 30px;
+    padding-bottom: 12px;
+  }
+  .textStatusTwo {
+    font-size: 19px;
+    padding: 0;
+  }
+  .containerButtons {
+    margin-top: 15px;
+  }
+  .buttonOne {
+    padding: 10px 22px 10px 22px;
+    margin-right: 60px;
+  }
+}
+
+@media screen and (max-width: 414px) {
+  .container-title h2 {
+    font-size: 18px;
+    margin: 80px 0 0 0;
+  }
+  .container-title h1 {
+    font-size: 100px;
+    line-height: 30px;
+    margin-top: 105px;
+  }
+  .containerMain {
+    padding: 0;
+    margin: 0;
+  }
+  .containerImg {
+    display: flex;
+    align-items: center;
+  }
+  .imgCapa {
+    height: 220px;
+  }
+  .containerContents {
+    padding: 0 0 0 39px;
+  }
+  .text {
+    font-size: 13px;
+    line-height: 18px;
+    margin-bottom: 5px;
+  }
+  .containerStatus {
+    display: grid;
+    padding: 0;
+  }
+  .containerTimer {
+    display: flex;
+    align-items: center;
+    padding: 0 0 5px 0;
+  }
+  .imgTimer {
+    height: 20px;
+  }
+  .textStatus {
+    font-size: 13px;
+  }
+  .containerStars {
+    display: grid;
+    margin-bottom: 5px;
+  }
+  .imgStars {
+    height: 20px;
+    padding-bottom: 5px;
+  }
+  .textStatusTwo {
+    font-size: 13px;
+    padding: 0;
+  }
+  .containerButtons {
+    display: grid;
+    margin-top: 5px;
+  }
+  .buttonOne {
+    padding: 12px 10px 12px 10px;
+    font-size: 13px;
+    margin: 0 0 10px 0;
+    text-align: center;
+  }
+  .buttonTwo {
+    padding: 12px 10px 12px 5px;
+    font-size: 13px;
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .container-title h2 {
+    font-size: 17px;
+    margin: 85px 0 0 0;
+  }
+  .container-title h1 {
+    font-size: 89px;
+    line-height: 30px;
+    margin: 65px 0 0 0;
+  }
+  .containerImg {
+    display: none;
+  }
+  .containerContents {
+    padding: 0;
+  }
+  .containerTimer {
+    display: flex;
+    align-items: center;
+    padding: 0;
+  }
+  .containerButtons {
+    margin-top: 0;
+  }
+  .buttonOne {
+    padding: 6px;
+    font-size: 13px;
+    margin: 0 0 5px 0;
+    text-align: center;
+  }
+  .buttonTwo {
+    padding: 6px;
+    font-size: 13px;
+    text-align: center;
+  }
+}
+
+
